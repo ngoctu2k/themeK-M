@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<!-- font awe -->
+	<script src="https://kit.fontawesome.com/1a23ef053a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<header>
+		<div class="top-bar">
+			<div class="container">
+				<div class="row topbar-content">
+					<div class="col-md-4">
+						<ul class="list_support unstyled">
+							<li><span><a href="#" rel="nofollow">hi@haravan.com</a></span></li>
+							<li><span>Hotline:<a href="#" rel="nofollow">1900.636.099</a></span></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<b>SALE:</b>
+					 	"Tặng khẩu trang với đơn hàng trên 1.200.000đ"
+					</div>
+					<div class="col-md-4">
+						<div class="wpo-wrapper-search">
+							<form action="/search" class="search-product ultimate-search">
+								<input type="hidden" name="type" value="product">
+								<input required="" id="inputSearchAuto-desktop" name="q" maxlength="40" autocomplete="off" class="search-product-input" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
+								<button type="submit" class="btn-search-product">
+									<svg version="1.1" class="svg search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><path d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z"></path><rect x="17" y="17" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" width="4" height="8"></rect></svg>
+								</button>
+							</form>
+							<div id="ajaxSearchResults-mb" class="smart-search-wrapper ajaxSearchResults">
+								<div class="resultsContent"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-header ">
+			<div class="container">
+				<div class="row menu-header-content">
+					<div class="hidden-lg col-md-4 col-xs-3 col-sm-4 hidden-md">
+						<div id="site-menu-handle" aria-hidden="true">
+							<div class="btnMenuMobile">
+								<span class="iconMenu"></span>
+								<span class="iconMenu"></span>
+								<span class="iconMenu"></span>
+								<span class="iconMenu"></span>
+							</div>
+						</div>
+					</div>
+					<div class="header-mid d-flex flexAlignCenter col-xs-6 col-sm-3 col-md-3 col-lg-3">
+						<div class="wrap-logo">
+							
+							  <h1><a href="#" itemprop="url">K&amp;M Style</a></h1>
+							
+							
+						</div>		
+					</div>
+					<div class="menu-desktop hidden-xs hidden-sm d-flex col-lg-6 col-md-6 col-sm-6">
+						<div id="nav">
+							<nav class="main-nav text-center">
+								<ul class="clearfix">
+									<li class="active">
+										<a href="#" title="Trang chủ"> 
+											Trang chủ
+										</a>
+									</li>
+									<li class="">
+										<a href="#" title="Nam"> 
+											Nam <i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li class="">
+												<a href="#" title="Túi xách"> 
+													Túi xách
+												</a>
+											</li>
+											<li class="">
+												<a href="#" title="Sản phẩm Nam"> 
+													Sản phẩm Nam <i class="fa fa-chevron-right" aria-hidden="true"></i>
+												</a>
+												<ul class="sub_menu">
+													<li class="active">
+														<a href="#" title="text"> 
+															text	
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li class="">
+												<a href="#" title="Sản phẩm Nữ"> 
+													Sản phẩm Nữ
+												</a>
+											</li>
+											<li class="">
+												<a href="#" title="Sản phẩm Giày"> 
+													Sản phẩm Giày
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="">
+										<a href="#" title="Product view"> 
+											Product view <i class="fa fa-chevron-down" aria-hidden="true"></i>
+										</a>
+										<ul class="sub_menu">
+											<li class="">
+												<a href="#" title="Product view 1"> 
+													Product view 1
+												</a>
+											</li>
+											<li class="">
+												<a href="#" title="Product view 2"> 
+													Product view 2
+												</a>
+											</li>
+											<li class="">
+												<a href="#" title="Product view 3"> 
+													Product view 3
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="">
+										<a href="#" title="Blog"> 
+											Blog
+										</a>
+									</li>
+									<li class="">
+										<a href="#" title="Giới thiệu"> 
+											Giới thiệu
+										</a>
+									</li>
+									<li class="">
+										<a href="#" title="Liên hệ"> 
+											Liên hệ
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>			</div>
+					<div class="header-wrap-icon col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<span class="icon-account" aria-label="Tài khoản" title="Tài khoản">
+							<a href="/account/login" title="Đăng nhập" class="d-flex flexAlignCenter">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+									<path d="M18 21v-2c0-1.38-0.561-2.632-1.464-3.536s-2.156-1.464-3.536-1.464h-8c-1.38 0-2.632 0.561-3.536 1.464s-1.464 2.156-1.464 3.536v2c0 0.552 0.448 1 1 1s1-0.448 1-1v-2c0-0.829 0.335-1.577 0.879-2.121s1.292-0.879 2.121-0.879h8c0.829 0 1.577 0.335 2.121 0.879s0.879 1.292 0.879 2.121v2c0 0.552 0.448 1 1 1s1-0.448 1-1zM14 7c0-1.38-0.561-2.632-1.464-3.536s-2.156-1.464-3.536-1.464-2.632 0.561-3.536 1.464-1.464 2.156-1.464 3.536 0.561 2.632 1.464 3.536 2.156 1.464 3.536 1.464 2.632-0.561 3.536-1.464 1.464-2.156 1.464-3.536zM12 7c0 0.829-0.335 1.577-0.879 2.121s-1.292 0.879-2.121 0.879-1.577-0.335-2.121-0.879-0.879-1.292-0.879-2.121 0.335-1.577 0.879-2.121 1.292-0.879 2.121-0.879 1.577 0.335 2.121 0.879 0.879 1.292 0.879 2.121zM24 21v-2c-0.001-1.245-0.457-2.385-1.216-3.261-0.652-0.753-1.528-1.311-2.529-1.576-0.534-0.141-1.081 0.177-1.222 0.711s0.177 1.081 0.711 1.222c0.607 0.161 1.136 0.498 1.528 0.952 0.455 0.526 0.727 1.206 0.728 1.952v2c0 0.552 0.448 1 1 1s1-0.448 1-1zM15.752 4.099c0.803 0.206 1.445 0.715 1.837 1.377s0.531 1.47 0.325 2.273c-0.176 0.687-0.575 1.256-1.105 1.652-0.314 0.235-0.675 0.41-1.063 0.511-0.534 0.14-0.854 0.687-0.713 1.221s0.687 0.854 1.221 0.713c0.637-0.167 1.232-0.455 1.753-0.844 0.883-0.66 1.552-1.613 1.845-2.758 0.342-1.337 0.11-2.689-0.542-3.788s-1.725-1.953-3.062-2.296c-0.535-0.137-1.080 0.186-1.217 0.721s0.186 1.080 0.721 1.217z"></path>
+								</svg>
+								<span>Đăng nhập</span>
+							</a>
+						</span>
+						<span id="site-cart-handle" class="icon-cart" aria-label="Open cart" title="Giỏ hàng">
+							<span class="cart-menu clearfix" aria-hidden="true">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24">
+									<path d="M19 5h-14l1.5-2h11zM21.794 5.392l-2.994-3.992c-0.196-0.261-0.494-0.399-0.8-0.4h-12c-0.326 0-0.616 0.156-0.8 0.4l-2.994 3.992c-0.043 0.056-0.081 0.118-0.111 0.183-0.065 0.136-0.096 0.282-0.095 0.425v14c0 0.828 0.337 1.58 0.879 2.121s1.293 0.879 2.121 0.879h14c0.828 0 1.58-0.337 2.121-0.879s0.879-1.293 0.879-2.121v-14c0-0.219-0.071-0.422-0.189-0.585-0.004-0.005-0.007-0.010-0.011-0.015zM4 7h16v13c0 0.276-0.111 0.525-0.293 0.707s-0.431 0.293-0.707 0.293h-14c-0.276 0-0.525-0.111-0.707-0.293s-0.293-0.431-0.293-0.707zM15 10c0 0.829-0.335 1.577-0.879 2.121s-1.292 0.879-2.121 0.879-1.577-0.335-2.121-0.879-0.879-1.292-0.879-2.121c0-0.552-0.448-1-1-1s-1 0.448-1 1c0 1.38 0.561 2.632 1.464 3.536s2.156 1.464 3.536 1.464 2.632-0.561 3.536-1.464 1.464-2.156 1.464-3.536c0-0.552-0.448-1-1-1s-1 0.448-1 1z"></path>
+								</svg>
+								<span class="count-holder"><span class="count">0</span></span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="search-bar-mobile">
+		<div class="search-box wpo-wrapper-search">
+			<form action="/search" class="searchform searchform-categoris ultimate-search">
+				<div class="wpo-search-inner">
+					<input type="hidden" name="type" value="product">
+					<input required="" id="inputSearchAuto-mb" name="q" maxlength="40" autocomplete="off" class="searchinput input-search search-input" type="text" size="20" placeholder="Tìm kiếm sản phẩm...">
+				</div>
+				<button type="submit" class="btn-search btn" id="search-header-btn-mb">
+					<svg version="1.1" class="svg search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><path d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z"></path><rect x="17" y="17" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" width="4" height="8"></rect></svg>
+				</button>
+			</form>
+			<div id="ajaxSearchResults-mb" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+				<div class="resultsContent"></div>
+			</div>
+		</div>
+	</div>
+	<main class="main-container-theme">
+		<div class="home-slider">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active carousel-item-left">
+			      <img class="d-block w-100" src="img/slide01_4b08ea1bd52841f4a05713c602da08f1.webp" alt="First slide">
+			    </div>
+			    <div class="carousel-item carousel-item-next carousel-item-left">
+			      <img class="d-block w-100" src="img/slide02.webp" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="img/slide03.webp" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		<section class="section section-banner">
+			<div class="container">
+				<div class="banner-home-outer">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 banner-home-item">
+							<div class="effectTwo fade-box">
+								<a href="#" title="Banner beauty 1">
+									<img class="img-responsive border-radius1 lazyloaded" data-src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg" alt="Banner beauty 1" src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg">
+								</a>               
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 banner-home-item">
+							<div class="effectTwo fade-box">
+								<a href="#" title="Banner beauty 1">
+									<img class="img-responsive border-radius1 lazyloaded" data-src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg" alt="Banner beauty 1" src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg">
+								</a>               
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 banner-home-item">
+							<div class="effectTwo fade-box">
+								<a href="#" title="Banner beauty 1">
+									<img class="img-responsive border-radius1 lazyloaded" data-src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg" alt="Banner beauty 1" src="https://file.hstatic.net/1000406172/file/s2_77fdec61957e4907bb3bfba3ecd7abad.jpg">
+								</a>               
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-collection">
+			<div class="wrapper-heading-home  text-center">
+				<div class="container">
+					<div class="groupTitle-home">
+						<h2>
+							<a href="/collections/onsale">
+								Sản phẩm mới
+							</a>
+						</h2>
+						<p>Cập nhật những sản phẩm mới nhật</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-collection-1">
+						<div class="container">
+							<div class="owl-carousel">
+	                            <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                             <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                             <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                             <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                             <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                             <div class="item"> 
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/product1.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                            	<div class="pro-loop animation-tran">
+	                            		<div class="product-block product-resize site-animation fixheight">
+	                            			<div class="product-img">
+	                            				<div class="product-sale"><span>-11%</span></div>
+	                            				<a href="#">
+	                            					<img src="img/slide02.webp">
+	                            				</a>
+	                            				<div class="box-pro-detail">
+													<h3 class="pro-name">
+														<a href="#" title="Áo thun len tay dài KM04">
+															Áo thun len tay dài KM04
+														</a>
+													</h3>
+													<div class="box-pro-prices">	
+														<p class="pro-price ">
+															<span>350,000₫</span>
+														</p>
+													</div>
+												</div>
+												<div class="variantColor">
+													<ul>											
+														<li data-src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_large.jpg" class="">
+															<img src="//product.hstatic.net/1000406172/product/623_800x_8af64c9947ba42a2a80d2b8ed67d01d4_icon.jpg" alt="Trắng">
+														</li>
+													</ul>
+												</div>
+	                            			</div>
+	                            		</div>
+	                            	</div>
+	                             </div>
+	                        </div>
+						</div>
+					</div>
+		</section>
+	</main>
+
+ <!-- jquery -->
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- demo ca -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

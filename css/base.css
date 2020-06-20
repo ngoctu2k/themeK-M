@@ -1,0 +1,39 @@
+:root{
+
+}
+*{
+	box-sizing: inherit;
+	
+}
+html{
+	font-size: 62.5%;
+	font-family: 'Quicksand', sans-serif !important;
+	line-height: 1.6rem;
+	box-sizing: border-box;
+}
+p{
+	font-size: 1.6rem;
+	
+}
+input{
+	outline: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	color: #333e48;;
+    font-weight: 500;
+    line-height: 3.8rem;
+    font-size: 36px;
+}
+a:hover{
+	text-decoration: none;
+	transition: opacity 150ms linear, color 150ms linear, background 150ms linear;
+	outline: none;
+}
+img{
+	object-fit: cover;
+	width: 100%;
+}
