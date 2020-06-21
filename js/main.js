@@ -10,10 +10,11 @@ $(document).scroll(function() {
 $(document).ready(function() {
 
 $(".owl-carousel").owlCarousel({
-autoplay:false,
+autoplay:true,
 autoplayHoverPause:true,
 autoPlay: 3000,
-items : 4,
+smartSpeed: 1000,
+items : 2,
 margin:20,
 itemsDesktop : [1199,3],
 itemsDesktopSmall : [979,3],
@@ -21,9 +22,9 @@ center: false,
 nav:false,
 loop:true,
 responsive: {
-600: {
-items: 4
-}
+768 : {
+    items: 4
+ }
 }
 
 
